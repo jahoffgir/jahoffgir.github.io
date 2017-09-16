@@ -90,7 +90,7 @@ nav  {
     color: black;
 }
 .active:hover{
-	color: gray;
+	color: white;
 }
 .active:link {
 	color: black;
