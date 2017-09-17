@@ -12,6 +12,9 @@ body, html {
 }
 
 body {
+	background-image: url("../images/scene.jpg");
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
 	font-family: Helvetica;
 	font-size: 18px;
 	color: black;
@@ -20,6 +23,13 @@ body {
 
 }
 
+#marginnav{
+	margin-left: 3.5%;
+}
+
+.content{
+	margin: 2% 5%;
+}
 /*
 keyframes for the images that slide
 */
@@ -164,6 +174,9 @@ nav ul li:hover{
 }
 
 @media screen and (max-width: 580px) {
+	#marginnav {
+		margin-left: 0;
+	}
 	nav ul {
 		max-height: 0;
 		/*background-color: #c7d3af;*/
