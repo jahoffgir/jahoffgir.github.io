@@ -9,6 +9,8 @@
 }
 body, html {
 	min-height: 100%;
+	height: 100%;
+	width: 100%;
 }
 
 #index-background {
@@ -18,6 +20,7 @@ body, html {
 	height: 100vh;
 	width: 100vw;
 }
+
 body {
 	font-family: Helvetica;
 	font-size: 18px;
@@ -36,54 +39,6 @@ body {
 
 .content{
 	margin: 2% 5%;
-}
-/*
-keyframes for the images that slide
-*/
-@keyframes s {
-0% { left: 0%; }
-20% { left: 0%; }
-25% { left: -100%; }
-45% { left: -100%; }
-50% { left: -200%; }
-70% { left: -200%; }
-75% { left: -300%; }
-95% { left: -300%; }
-100% { left: -400%; }
-}
-
-/*
-	customizing the image slider
-*/
-#slider {
-	margin-top: 1%;
-	margin-bottom: 1%;
-	margin-right: 10%;
-	margin-left: 10%;
-	overflow: hidden;
-	z-index: -1;
-}
-#slider figure img {
-	width: 20%;
-	height: 15%;
-	float: left;
-	z-index: -1;
-}
-#slider figure {
-	position: relative;
-	width: 500%;
-	margin: 0;
-	left: 0;
-	text-align: left;
-	font-size: 0;
-	animation: 20s s infinite;
-	z-index: 1;
-}
-.slideWrapper{
-	display: inline-block;
-    width: 100%;
-  	height: 100%;
-    z-index: -1;
 }
 
 /**
@@ -179,11 +134,28 @@ nav ul li:hover{
 	display: none;
 	/*background-color: #c7d3af;*/
 }
-#index-about {
-	height: 100vh;
-	width: 100vw;
-	margin: 10% 5%;
+#index-about p{
+	word-wrap: break-word;
 }
+#index-about {
+	position: absolute;
+	overflow: auto;
+	height: 100vh;
+	
+	margin: 5%;
+	word-wrap: break-word;
+}
+#logo img {
+		width: 50%auto;
+		height: 50%auto;
+}
+#logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 @media screen and (max-width: 580px) {
 	#marginnav {
 		margin-left: 0;
