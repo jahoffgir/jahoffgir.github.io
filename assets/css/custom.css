@@ -142,7 +142,9 @@ nav ul {
 	transition: max-height 0.4s;
 
 }
-
+/*nav {
+	z-index: 0;
+}*/
 nav ul li {
 	display: inline-block;
 	padding: 20px;
@@ -163,7 +165,33 @@ nav ul li:hover{
 	/*background-color: #c7d3af;*/
 }
 
+.content{
+	margin: 2% 5%;
+}
+#logo img {
+	z-index: -1;
+	width: 50%auto;
+	height: 50%auto;
+}
+
+/*#logo {
+    position: sticky;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}*/
+
+#index-background {
+	background-image: url("../images/scene.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+}
 @media screen and (max-width: 580px) {
+	/*#logo {
+		position: static;
+	}*/
 	nav ul {
 		max-height: 0;
 		/*background-color: #c7d3af;*/
