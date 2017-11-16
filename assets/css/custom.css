@@ -14,7 +14,7 @@ body, html {
 body {
 	font-family: Helvetica;
 	font-size: 18px;
-	color: black;
+	color: grey;
 	margin: 0;
 	padding: 0;
 
@@ -78,19 +78,19 @@ keyframes for the images that slide
 }
 
 nav  {
-	background-color: black;
-	color: white;
+	background-color: white;
+	color: grey;
 }
 
 /*
 	Tells which page is active on the navigation
 */
 .active {
-    background-color: white;
+    background-color: black;
     color: black;
 }
 .active:hover{
-	color: gray;
+	color: black;
 }
 .active:link {
 	color: black;
@@ -131,7 +131,7 @@ a {
 nav ul {
 	/*background-color: #999999;*/
 	overflow: hidden;
-	color: white;
+	color: grey;
 	padding: 0;
 	text-align: left;
 	margin: 0 auto;
@@ -160,7 +160,7 @@ nav ul li:hover{
 	box-sizing: border-box;
 	padding: 15px 10px;
 	cursor: pointer;
-	color: white;
+	color: black;
 	display: none;
 	/*background-color: #c7d3af;*/
 }

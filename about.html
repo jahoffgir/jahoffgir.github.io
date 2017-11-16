@@ -13,9 +13,28 @@
 		 	</head>
 		 	<!-- Body of the page -->
 		 	<body>
+			<div id="index-background">
+		 		<!-- Navigation of the page -->
+				<nav>
+				    <div class="handle"><img class="menu" src="assets/images/icons/menu.png" alt="Menu"></a>Menu</div>
+				    <ul>
+				      <a href="index.html"><li>About
+				      </li></a><a href="projects.html"><li>Projects</li></a>
+				      <a href="blogs.html"><li>Blogs
+				      </li></a><a href="experiences.html"><li>Experiences</li></a>
+				    </ul>
 
+				</nav>
+				<!-- <div class="content">
+					<div id="logo">
+						<img src="logo1.png" alt="logo">
+				  </div>
+				</div> -->
+		   </div>
 	 		<script>
-	 		    window.location = "about.html";
+	 		    $('.handle').on('click', function() {
+	 		        $('nav ul').toggleClass("showing");
+	 		    });
 	 		</script>
 
 		 	</body>
