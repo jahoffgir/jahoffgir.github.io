@@ -1,39 +1,32 @@
-.top{
-	color: #f0f0f0;
-	width: 100%;
-	max-width: 960px;
-	font: 25px "Amatic SC", cursive;
-	text-shadow: 1px 1px 0 rgba(0,0,0,.2);
-	margin: 40px auto;
-	text-align: center;
-}
+
 body, html {
 	min-height: 100%;
 }
 
 body {
-	font-family: Helvetica;
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 	font-size: 18px;
 	color: grey;
 	margin: 0;
 	padding: 0;
 
 }
+.active{
+	text-decoration: line-through;
+	color: black;
+	transition: .3s ease-in-out;
+}
 .about {
+	background-image: url("../images/scene.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 	height: 100vh;
 	width: 100vw;
 }
+
 nav  {
 	background-color: white;
 	color: grey;
-}
-
-/*
-	Tells which page is active on the navigation
-*/
-.active {
-    background-color: black;
-    color: black;
 }
 .active:hover{
 	color: black;
@@ -46,7 +39,7 @@ a {
 	color: inherit;
 }
 nav {
-	background-color: #efeded;
+	background-color: #f7f7f7;
 }
 nav ul {
 	/*background-color: #999999;*/
@@ -109,8 +102,8 @@ h1 {
 	position: static;
 }
 .about-logo{
-	width: 75%;
-	height: 75%;
+	width: 50%;
+	height: 50%;
 	text-align: center;
 	position: absolute;
 	top: 50%;
