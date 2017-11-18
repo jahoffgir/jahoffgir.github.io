@@ -16,13 +16,7 @@ body {
 	color: black;
 	transition: .3s ease-in-out;
 }
-.about {
-	background-image: url("../images/scene.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 100vh;
-	width: 100vw;
-}
+
 
 nav  {
 	background-color: white;
@@ -38,13 +32,11 @@ a {
 	text-decoration: none;
 	color: inherit;
 }
-nav {
-	background-color: #f7f7f7;
-}
+
 nav ul {
 	/*background-color: #999999;*/
 	overflow: hidden;
-	color: grey;
+	color: black;
 	padding: 0;
 	text-align: right;
 	margin: 0 auto;
@@ -90,10 +82,13 @@ nav ul li:hover{
 }
 
 nav {
+	background: rgba(85,107,47, .8);
 	overflow: hidden;
 	position: fixed;
 	top: 0;
 	width: 100%;
+	z-index: 1;
+	color: black;
 }
 h1 {
 	color: black;
@@ -111,13 +106,19 @@ h1 {
 	z-index: -1;
 	transform: translate(-50%, -50%);
 }
-
-#index-background {
-	/*background-image: url("../images/logo.png");*/
+.boat {
+	margin-top: 4.5%;
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+	background-image: url("../images/boat.jpeg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100vh;
-	width: 100vw;
+	width: 50vw;
+}
+footer {
+	height: 15vh;
+	width: 15vw;
 }
 @media screen and (max-width: 580px) {
 	/*#logo {
@@ -127,7 +128,7 @@ h1 {
 		display: none;
 	}
 	nav ul {
-		color: grey;
+		color: black;
 		max-height: 0;
 		/*background-color: #c7d3af;*/
 	}
