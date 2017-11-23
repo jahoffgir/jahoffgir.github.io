@@ -1,27 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 		<!-- The head of the page -->
-		 <head> <title>Projects</title>
+		 <head> <title>Homepage</title>
 		 	<meta charset="utf-8" />
-		 	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
-			<link rel="shortcut icon" href="Images/fl.png">
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
+		 	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+			<!-- <link rel="shortcut icon" href="Images/fl.png"> -->
+			<link rel="icon" href="assets/images/favicon.png" sizes="16x16 32x32">
+			<meta name="viewport" content ="width=device-width, initial-scale=1">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+			<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Slab:700">
 		 	</head>
 		 	<!-- Body of the page -->
-			<body><!-- Navigation of the page -->
+		 	<body>
+			<div id="index-background">
+		 		<!-- Navigation of the page -->
+
 				<nav>
-					  <div class="handle"><img class="menu" src="assets/images/icons/menu.png" alt="Menu"></a>Menu</div>
-						<div id="marginnav">
-					    <ul>
-					      <a href="index.html"><li>Home
-					      </li></a><a href="projects.html"><li>Projects</li></a>
-					      <a href="blogs.html"><li>Blogs
-					      </li></a><a href="experiences.html"><li>Experiences</li></a>
-					      <a href="resume.html"><li>Resume
-					      </li></a><a href="contact.html"><li>Contact</li></a>
-					    </ul>
-						</div>
-			</nav>
-		</body>
+				    <div class="handle"><img class="menu" src="assets/images/icons/menu.png" alt="Menu">Menu</div>
+					<div class="text_logo" ><a href="index.html"><b>&lt;jahoffgir&gt;</b></a></div>
+				    <ul>
+				      	<a class="active"href="about"><li>About
+				      	</li></a><a href="projects"><li>Projects
+					</li></a><a href="blog"><li>Blog
+				      	</li></a><a href="experiences"><li>Experiences</li></a>
+				    </ul>
+				</nav>
+				<img class="boat" src="assets/images/boat.jpeg" alt="Boat">
+		   </div>
+
+		   <footer></footer>
+
+
+	 		<script>
+	 		    $('.handle').on('click', function() {
+	 		        $('nav ul').toggleClass("showing");
+	 		    });
+	 		</script>
+		 	</body>
 </html>
