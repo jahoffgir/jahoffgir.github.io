@@ -76,9 +76,6 @@ h1 {
 	font-size: 150%;
 	margin-top: 5%;
 	color: black;
-	/*position: static;*/
-	/*padding: 5%;*/
-	/*margin-top: 5%;*/
 	line-height: 200%;
 	float: right;
 	height: 100%;
@@ -89,17 +86,17 @@ h1 {
 	height: 100%;
 }
 .boat {
-	/*margin-top: 3%;*/
 	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
-	/*background-image: url("../images/boat.jpeg");
-	background-repeat: no-repeat;
-	background-size: cover;*/
 	height: 100%;
 	width: 60%;
 	/*width: auto;*/
 }
-
+.about-cont {
+	margin: 7% 15% 15% 15%;
+	font-size: 150%;
+	line-height: 200%;
+}
 p{
   font-family: "Courier";
 }
@@ -118,6 +115,11 @@ p{
 		margin: 10%;
 		width: 100%;
 		float: none;
+		font-size: 100%;
+	}
+	.about-cont {
+		margin: 0 10% 10% 10%;
+		
 		font-size: 100%;
 	}
 	.boat {
