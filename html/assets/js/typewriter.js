@@ -38,7 +38,7 @@ TxtRotate.prototype.tick = function() {
 
   setTimeout(function() {
     that.tick();
-}, 110);
+}, 125);
 };
 
 window.onload = function() {
