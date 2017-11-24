@@ -1,3 +1,5 @@
+// Simple typewriter by
+// https://codepen.io/gschier/pen/jkivt?page=1&
 var TxtRotate = function(el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
@@ -36,7 +38,7 @@ TxtRotate.prototype.tick = function() {
 
   setTimeout(function() {
     that.tick();
-  }, delta);
+}, 110);
 };
 
 window.onload = function() {

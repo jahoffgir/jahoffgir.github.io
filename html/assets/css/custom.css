@@ -133,8 +133,11 @@ p{
 		margin-top: 15%;
 		font-size: 70%;
 	}
+	.about-wrap {
+		width: 90%;
+	}
 	.about-content {
-		margin: 5%;
+		margin: 10%;
 		width: 100%;
 		float: none;
 		font-size: 100%;
