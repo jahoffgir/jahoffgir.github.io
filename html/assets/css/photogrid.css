@@ -1,26 +1,18 @@
 * {
     box-sizing: border-box;
 }
-
-body {
-    margin: 0;
-    font-family: Arial;
-}
-
-.header {
-    text-align: center;
-    padding: 32px;
-}
-
 /* Create four equal columns that floats next to each other */
+.row-wrapper {
+    margin-top: 5%;
+}
 .column {
     float: left;
-    width: 25%;
-    padding: 10px;
+    width: 50%;
+
 }
 
 .column img {
-    margin-top: 12px;
+    margin-top: 10%;
 }
 
 /* Clear floats after the columns */
@@ -28,6 +20,44 @@ body {
     content: "";
     display: table;
     clear: both;
+}
+
+.container {
+  position: relative;
+  width: 85%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: white;
+}
+
+.container:hover .overlay {
+  opacity: .88;
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */

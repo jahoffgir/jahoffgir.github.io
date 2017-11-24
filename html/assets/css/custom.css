@@ -1,8 +1,3 @@
-
-/*body, html {
-	min-height: 100%;
-}*/
-
 body {
 	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 	font-size: 18px;
@@ -13,7 +8,7 @@ body {
 }
 
 .active{
-	border-bottom: thick solid #ff0000;
+	border-bottom: thick solid black;
 	background-color: white;
 	color: #bdcebe
 }
@@ -33,14 +28,11 @@ nav {
 }
 
 nav ul {
-	/*background-color: #999999;*/
 	overflow: hidden;
 	color: black;
 	padding: 0;
 	text-align: right;
 	margin: 0 auto;
-
-
 }
 
 nav ul li {
@@ -82,7 +74,7 @@ h1 {
 
 .about-content {
 	font-size: 150%;
-	margin-top: 10%;
+	margin-top: 5%;
 	color: black;
 	/*position: static;*/
 	/*padding: 5%;*/
@@ -107,31 +99,17 @@ h1 {
 	width: 60%;
 	/*width: auto;*/
 }
-footer {
-	height: 15vh;
-	width: 15vw;
-}
 
 p{
-
   font-family: "Courier";
-  /*font-size: 20px;*/
-  /*margin: 10px 0 0 10px;*/
-  /*white-space: nowrap;*/
-  /*overflow: hidden;*/
-  /*width: 30em;*/
-
 }
-
-
-
-
-
-
 @media screen and (max-width: 580px) {
 	.follow-me {
 		margin-top: 15%;
 		font-size: 70%;
+	}
+	.follow-me p{
+		font-size: 50%;
 	}
 	.about-wrap {
 		width: 90%;

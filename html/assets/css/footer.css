@@ -1,9 +1,11 @@
 .follow-me {
-
+    margin-top: 10%;
+    margin-bottom: 5%;
     color: black;
     font-size: 150%;
     height: 100%;
 }
+
 .fa {
   padding: 20px;
   font-size: 30px;
