@@ -13,25 +13,10 @@
 		 	</head>
 		 	<!-- Body of the page -->
 		 	<body>
-				<nav>
-				    <div class="handle"><img class="menu" src="assets/images/icons/menu.png" alt="Menu">Menu</div>
-					<div class="text_logo" ><a data-hover="CLICK ME"href="index.html"><b>&lt;jahoffgir&gt;</b></a></div>
-				    <ul>
-				      	<a href="about"><li>About
-				      	</li></a><a href="projects"><li>Projects
-						</li></a><a href="blog"><li class="active">Blog
-				      	</li></a><a href="experiences"><li>Experiences</li></a>
-				    </ul>
-				</nav>
-				<p>Coming soon</p>
-
-		   <footer></footer>
-
 
 	 		<script>
-	 		    $('.handle').on('click', function() {
-	 		        $('nav ul').toggleClass("showing");
-	 		    });
+	 		    window.location = "about";
 	 		</script>
+
 		 	</body>
 </html>
