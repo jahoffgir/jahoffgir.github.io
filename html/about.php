@@ -1,6 +1,3 @@
-<?php
-phpinfo();
-?>
 <!DOCTYPE html>
 <html lang="en">
 		<!-- The head of the page -->
@@ -14,9 +11,10 @@ phpinfo();
 			<!-- <link rel="shortcut icon" href="Images/fl.png"> -->
 			<link rel="icon" href="assets/images/favicon.png" sizes="16x16 32x32">
 			<meta name="viewport" content ="width=device-width, initial-scale=1">
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-			<script src="assets/js/typewriter.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/5.2.0/typeit.min.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 			<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Slab:700">
+                       
 		 	</head>
 		 	<!-- Body of the page -->
 		 	<body>
@@ -27,27 +25,30 @@ phpinfo();
 				    <div class="handle"><img class="menu" src="assets/images/icons/menu.png" alt="Menu">Menu</div>
 					<div class="text_logo" ><a data-hover="CLICK ME"href="index.html"><b>&lt;jahoffgir&gt;</b></a></div>
 				    <ul>
-				      	<a href="about"><li class="active">About
-				      	</li></a><a href="projects"><li>Projects
-						</li></a><a href="blog"><li>Blog
-				      	</li></a><a href="experiences"><li>Experiences</li></a>
+				      	<a href="about.php"><li class="active">About
+				      	</li></a><a href="projects.php"><li>Projects
+						</li></a><a href="blog.php"><li>Blog
+				      	</li></a><a href="experiences.php"><li>Experiences</li></a>
 				    </ul>
 				</nav>
 
 				<div class="about-wrap">
 				<img class="boat" src="assets/images/boat.jpeg" alt="Boat">
+			
 				<div class="about-content">
-
-					<!-- <p>Hello, World!</p> -->
-					<p>Hello, World!<br> I am<span
-     					class="txt-rotate"
-     					data-period="2000"
-     					data-rotate='[ " an aspiring Software Developer.", " a passionate learner.",
-						" GOOFY!", " a minimalist." ]'></span>
-					<br>My name is Jahongir, Jahon for short. Welcome to my personal
-					website. As you explore my site, you can look forward to a
-					showcase of my fun projects, my blog about a variety of
-					topics, and the stories of my experiences.</p>
+					<p id="example1"></p>
+					<script>
+						new TypeIt('#example1', {
+						     speed: 80,
+						     autoStart: false
+						}) 
+						.type('Hello, Wordl!')
+						.pause(1000)
+						.delete(3)
+						.type('ld!')
+						.break() .pause(750)
+						.type('My name is Jahongir, Jahon for short. Welcome to my personal website.')
+					</script>
 					<section id="section03" class="demo">
   					<a href="#blank-space"><span></span></a>
 					</section>

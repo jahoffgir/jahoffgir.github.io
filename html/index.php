@@ -15,7 +15,7 @@
 		 	<body>
 
 	 		<script>
-	 		    window.location = "about";
+	 		    window.location = "about.php";
 	 		</script>
 
 		 	</body>

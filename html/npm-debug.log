@@ -1,0 +1,25 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm' ]
+2 info using npm@3.5.2
+3 info using node@v6.11.4
+4 verbose stack Error: Cannot find module 'npm-autoinit/autoinit'
+4 verbose stack     at Function.Module._resolveFilename (module.js:469:15)
+4 verbose stack     at Function.Module._load (module.js:417:25)
+4 verbose stack     at Module.require (module.js:497:17)
+4 verbose stack     at require (internal/module.js:20:19)
+4 verbose stack     at cb (/usr/share/npm/lib/npm.js:290:9)
+4 verbose stack     at /usr/share/npm/lib/npm.js:386:16
+4 verbose stack     at /usr/share/npm/lib/config/core.js:80:7
+4 verbose stack     at Array.forEach (native)
+4 verbose stack     at /usr/share/npm/lib/config/core.js:79:13
+4 verbose stack     at f (/usr/share/npm/node_modules/once/once.js:17:25)
+5 verbose cwd /var/www/html
+6 error Linux 4.13.0-16-generic
+7 error argv "/usr/bin/node" "/usr/bin/npm"
+8 error node v6.11.4
+9 error npm  v3.5.2
+10 error code MODULE_NOT_FOUND
+11 error Cannot find module 'npm-autoinit/autoinit'
+12 error If you need help, you may report this error at:
+12 error     <https://github.com/npm/npm/issues>
+13 verbose exit [ 1, true ]
