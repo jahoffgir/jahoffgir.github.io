@@ -204,17 +204,14 @@ p{
 }
 
 #exp-body {
-    font-size: 70%;
-   
+    font-size: 70%; 
     margin: 7% 5% 5% 5%;
-    
-/*
-    margin-left: 5%;
-    margin-right: 5%;
-*/
 }
 
+#exp-body li {
+    font-family: "Courier";
 
+}
 
 @media screen and (max-width: 580px) {
 	.follow-me {
