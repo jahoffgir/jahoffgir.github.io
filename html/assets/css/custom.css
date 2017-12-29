@@ -44,6 +44,7 @@ nav ul li:hover{
 	background-color: white;
 	color: black;
 }
+/*
 
 h1 {
 	color: black;
@@ -51,6 +52,7 @@ h1 {
 	text-align: center;
 	position: static;
 }
+*/
 
 
 .handle {
@@ -199,6 +201,17 @@ p{
   100% {
     opacity: 0;
   }
+}
+
+#exp-body {
+    font-size: 70%;
+   
+    margin: 7% 5% 5% 5%;
+    
+/*
+    margin-left: 5%;
+    margin-right: 5%;
+*/
 }
 
 
