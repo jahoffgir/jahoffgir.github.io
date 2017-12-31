@@ -39,7 +39,8 @@
 		 	<meta charset="utf-8" />
 
 		 	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
-			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 			<link rel="icon" href="assets/images/favicon.png" sizes="16x16 32x32">
 			<meta name="viewport" content ="width=device-width, initial-scale=1">
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -47,10 +48,14 @@
 		 	</head>
 		 	<!-- Body of the page -->
 			<style>
-			#container {
-				margin-top: 10%;
-				margin: 5%;
-			}
+                #container {
+                    padding: 5%;
+                }
+                @media screen and (max-width: 580px) {
+                    #container {
+                        padding-top: 10%;
+                    }
+                }
 			</style>
 
 		 	<body>
@@ -87,9 +92,6 @@
 					}
 					?>
 				</div>
-				<p>Coming soon</p>
-
-
 		   <div align="center" class="follow-me">
                <p>Follow me on:</p>
                <div align="center" class="footer">

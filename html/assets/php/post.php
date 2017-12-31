@@ -44,25 +44,48 @@ if (isset($_POST['submit'])) {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Post</title>
+    <title><?php
+                $rows = $query->fetch_object();
+                echo $rows->title;
+            ?></title>
 </head>
 <style>
     #container {
-        width: 800px;
-        padding: 5px;
-        margin: auto;
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-top: 7%;
     }
     label {
         display: block;
     }
+    @media screen and (max-width: 580px) {
+        #container {
+            padding-top: 10%;
+        }
+    }
 </style>
+    <link rel="stylesheet" type="text/css" href="../css/custom.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <body>
+    <nav>
+        <div class="handle"><img class="menu" src="../../assets/images/icons/menu.png" alt="Menu">Menu</div>
+        <div class="text_logo" ><a data-hover="CLICK ME"href="index.html"><b>&lt;jahoffgir&gt;</b></a></div>
+        <ul>
+            <a href="../../about"><li>About
+            </li></a><a href="../../projects"><li>Projects
+        </li></a><a href="../../blog"><li class="active">Blog
+            </li></a><a href="../../experiences"><li>Experiences</li></a>
+        </ul>
+    </nav>
     <div id="container">
         <div id="post">
             <?php
-                $row = $query->fetch_object();
-                echo "<h2>.$row->title.</h2>";
-                echo "<p>.$row->body.</p>";
+                
+                echo "<h2>$rows->title</h2>";
+                echo "<p>$rows->body</p>";
             ?>
             <hr />
             <div id="add-comments">
@@ -95,5 +118,10 @@ if (isset($_POST['submit'])) {
             </div>
         </div>
     </div>
+        <script>
+	 		    $('.handle').on('click', function() {
+	 		        $('nav ul').toggleClass("showing");
+	 		    });
+        </script>
 </body>
 </html>
