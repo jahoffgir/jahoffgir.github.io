@@ -35,7 +35,7 @@
 <!DOCTYPE html>
 <html lang="en">
 		<!-- The head of the page -->
-		 <head> <title>Homepage</title>
+		 <head> <title>Blog</title>
 		 	<meta charset="utf-8" />
 
 		 	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">

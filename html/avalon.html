@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- The head of the page -->
+    <head> <title>Avalon</title>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+<!--
+    <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/photogrid.css">
+-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- <link rel="shortcut icon" href="Images/fl.png"> -->
+    <link rel="icon" href="assets/images/favicon.png" sizes="16x16 32x32">
+    <meta name="viewport" content ="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Slab:700">
+    </head>
+    <style>
+        .ava-body {
+            margin: 10% 20% 5% 20%;
+        }
+        @media screen and (max-width: 580px) {
+            .ava-body {
+                margin: 15% 5% 5% 5%;
+            }
+        }
+    </style>
+    <!-- Body of the page -->
+    <body>
+        <nav>
+            <div class="handle"><img class="menu" src="assets/images/icons/menu.png" alt="Menu">Menu</div>
+            <div class="text_logo" ><a data-hover="CLICK ME"href="index.html"><b>&lt;jahoffgir&gt;</b></a></div>
+            <ul>
+                <a href="about"><li>About
+                </li></a><a href="projects"><li class="active">Projects
+            </li></a><a href="blog"><li>Blog
+                </li></a><a href="experiences"><li>Experiences</li></a>
+            </ul>
+        </nav>
+        <div class="ava-body">
+            <h1>Avalon - Introduction</h1>
+            <p>Avalon is a fanmade web-application game, implemented in HTML, CSS, 
+            and JavaScript, that was inspired by <b>The Resistance: Avalon</b> 
+            board game. Players can play the game in a group. Currently, the game
+            can be played on one device. Rules of the game and open-source code
+            can be found here, respectively: 
+            <a href="http://upload.snakesandlattes.com/rules/r/ResistanceAvalon.pdf">
+            <ins><b>rules</b></ins></a> and <a href="https://github.com/jahoffgir/Avalon">
+            <ins><b>code</b></ins></a>.</p>
+        </div>
+        <img src="assets/images/avalon.png" style="width:100%; ">
+        <div class="ava-body">
+            <h1>How to</h1>
+            <p>When initially starting the game, users will be instructed to type
+            how many people are playing. Afterwards, everyone types their alias
+            and once thats done, each person checks their character(WITHOUT 
+            revealing their character), and information about the players. Next, 
+            the 'King' picks the players that will go on the mission. For each
+            mission, other players need to accept or reject the people that are 
+            going to the mission. This will repeat until good or evil wins.</p>
+        </div>
+        
+        <div class="ava-body">
+            <h1>Backstory</h1>
+            <p>When my friends and I attended hackathon, Hack Upstate, we did not 
+            know what we wanted to work on, but we knew that we wanted to make an 
+            awesome web-application game. Upon researching, we set our mind to 
+            making the fanmade Avalon game. When researching, we could not find a 
+            version that was a web-application, free, and user friendly. Our goal
+            was to make the game user friendly, open-source, and robust. 
+            </p>
+        </div>
+        <div align="center" class="follow-me">
+            <p>Follow me on:</p>
+            <div align="center" class="footer">
+                <a href="https://www.facebook.com/jahongir.amir" class="fa fa-facebook"></a>
+                <a href="https://www.linkedin.com/in/jahongir-amirkulov-274523107/" class="fa fa-linkedin"></a>
+                <a href="https://www.instagram.com/jahoffgir/" class="fa fa-instagram"></a>
+                <a href="https://github.com/jahoffgir" class="fa fa-github"></a>
+            </div>
+        </div>
+        <script>
+            $('.handle').on('click', function() {
+                $('nav ul').toggleClass("showing");
+            });
+        </script>
+    </body>
+</html>
