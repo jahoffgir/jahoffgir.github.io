@@ -85,7 +85,7 @@ if (isset($_POST['submit'])) {
             <?php
                 
                 echo "<h2>$rows->title</h2>";
-                echo "<p>$rows->body</p>";
+                echo html_entity_decode("<p>$rows->body</p>");
             ?>
             <hr />
             <div id="add-comments">
