@@ -98,10 +98,11 @@ if (isset($_POST['submit'])) {
                     </div>
                     <div>
                         <label>Comment</label><textarea name="comment"></textarea>
-                    </div
+                    </div>
                     <input type="hidden" name="post_id" value="<?php echo $id?>" />
                     <input type="submit" name="submit" value="Submit" />
                 </form>
+                
             </div>
             <div id="Comments">
                 <?php

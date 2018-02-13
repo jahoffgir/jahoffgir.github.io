@@ -76,10 +76,12 @@
 							$lastspace = strrpos($body, ' ');
 					?>
 					<article>
+                        
 						<h2><?php echo $title?></h2>
 						<?php echo html_entity_decode(substr($body, 0, $lastspace)) ?>
 						<?php echo "<a href='assets/php/post.php?id=$post_id'>..</a>"?>
 						<p>Category: <?php echo $category?></p>
+<!--                        <p>Date Posted: <?php echo $posted?></p>-->
 					</article>
 					<?php endwhile?>
 
