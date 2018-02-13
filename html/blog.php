@@ -48,6 +48,12 @@
 		 	</head>
 		 	<!-- Body of the page -->
 			<style>
+				.blog-links {
+					color: #bdcebe;
+				}
+				.blog-link:hover{
+					text-decoration: underline;
+				}
                 #container {
                     padding: 5%;
                 }
@@ -77,10 +83,11 @@
 					?>
 					<article>
                         
-						<h2><?php echo $title?></h2>
+						<h2><?php echo "<a class='blog-link' href='post?id=$post_id'></br>$title</a>"?></h2>
 						<?php echo html_entity_decode(substr($body, 0, $lastspace)) ?>
-						<?php echo "<a href='assets/php/post.php?id=$post_id'>..</a>"?>
+						<?php echo "<a class='blog-link blog-links' href='post?id=$post_id'>Read More</a>"?>
 						<p>Category: <?php echo $category?></p>
+						<p class='data-format'>Date: <?php echo date("F d, Y")?></p>
 <!--                        <p>Date Posted: <?php echo $posted?></p>-->
 					</article>
 					<?php endwhile?>
