@@ -26,11 +26,12 @@
 	$next = $page + 1;
 
 	$query = $db->prepare("SELECT  DISTINCT post_id, title, LEFT(body, 100) AS
-	body, category FROM post INNER JOIN categories ON
+	body, category, posted FROM post INNER JOIN categories ON
 	categories.category_id=post.category_id order by post_id desc limit $start, $per_page");
 
 	$query->execute();
-	$query->bind_result($post_id, $title, $body, $category);
+	$query->bind_result($post_id, $title, $body, $category, $posted);
+	
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -83,12 +84,13 @@
 					?>
 					<article>
                         
-						<h2><?php echo "<a class='blog-link' href='post?id=$post_id'></br>$title</a>"?></h2>
+						<h2><?php echo "<a class='blog-link' href='./post?id=$post_id'></br>$title</a>"?></h2>
 						<?php echo html_entity_decode(substr($body, 0, $lastspace)) ?>
-						<?php echo "<a class='blog-link blog-links' href='post?id=$post_id'>Read More</a>"?>
+						<?php echo "<a class='blog-link blog-links' href='./post?id=$post_id'>Read More</a>"?>
 						<p>Category: <?php echo $category?></p>
-						<p class='data-format'>Date: <?php echo date("F d, Y")?></p>
-<!--                        <p>Date Posted: <?php echo $posted?></p>-->
+						
+						<p class='data-format'>Date: <?php echo date_format(new DateTime($posted), "m/d/Y")?></p>
+
 					</article>
 					<?php endwhile?>
 

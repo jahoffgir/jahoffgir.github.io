@@ -1,19 +1,19 @@
 <?php
 if(!isset($_GET['id'])) {
-    header('Location: ../../blog.php');
+    header('Location: blog.php');
     exit();
 } else {
     $id = $_GET['id'];
 }
-include('db_connect.php');
+include('assets/php/db_connect.php');
 if (!is_numeric($id)) {
-    header('Location: ../../blog.php');
+    header('Location: blog.php');
     exit();
 }
 $sql = "SELECT title, body FROM post WHERE post_id='$id'";
 $query =  $db->query($sql);
 if ($query->num_rows != 1) {
-    header('Location: ../../blog.php');
+    header('Location: blog.php');
     exit();
 }
 // will run if it is clicked
@@ -65,8 +65,8 @@ if (isset($_POST['submit'])) {
         }
     }
 </style>
-    <link rel="stylesheet" type="text/css" href="../css/custom.css">
-    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <body>
@@ -74,10 +74,10 @@ if (isset($_POST['submit'])) {
         <div class="handle"><img class="menu" src="../../assets/images/icons/menu.png" alt="Menu">Menu</div>
         <div class="text_logo" ><a data-hover="CLICK ME"href="index.html"><b>&lt;jahoffgir&gt;</b></a></div>
         <ul>
-            <a href="../../about"><li>About
-            </li></a><a href="../../projects"><li>Projects
-        </li></a><a href="../../blog"><li class="active">Blog
-            </li></a><a href="../../experiences"><li>Experiences</li></a>
+            <a href="about"><li>About
+            </li></a><a href="projects"><li>Projects
+        </li></a><a href="blog"><li class="active">Blog
+            </li></a><a href="experiences"><li>Experiences</li></a>
         </ul>
     </nav>
     <div id="container">
