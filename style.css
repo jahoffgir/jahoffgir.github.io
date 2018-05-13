@@ -11,6 +11,19 @@ body {
     color: black;
     font-family: "Avenir Next", "Avenir", sans-serif;
 }
+@font-face {
+    font-family: myFirstFont;
+    src: url(fonts/Rhesmanisa.otf);
+}
+.logo {
+	font-family: myFirstFont;
+	font-size: 250%;
+	margin: 5.5%;	
+	margin-bottom: 15%;
+	/* text-align: right;
+	position: fixed; */
+	
+}
 
 a {
     text-decoration: none;
@@ -21,10 +34,12 @@ a {
 a:hover {
     color: tomato;
 }
+
 .coming-soon {
-	position: absolute;
-	margin: 20%;
+	position: static;
+	/* margin: 20%; */
 	font-size: 300%;
+	text-align: center;	
 	
 }
 /* ABOUT */
