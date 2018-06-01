@@ -13,7 +13,7 @@ body {
 }
 @font-face {
     font-family: myFirstFont;
-    src: url(fonts/Rhesmanisa.otf);
+    src: url(../fonts/Rhesmanisa.otf);
 }
 .logo {
 	font-family: myFirstFont;
