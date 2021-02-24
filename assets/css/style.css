@@ -9,7 +9,8 @@ body {
     height: 100%;
     width: 100%;
     color: black;
-    font-family: "Avenir Next", "Avenir", sans-serif;
+    font-size: 25px !important;
+    font-family: "Avenir Next", "Avenir", sans-serif !important;
 }
 @font-face {
     font-family: myFirstFont;
@@ -20,9 +21,6 @@ body {
 	font-size: 250%;
 	margin: 5.5%;	
 	margin-bottom: 15%;
-	/* text-align: right;
-	position: fixed; */
-	
 }
 
 a {
@@ -48,7 +46,7 @@ a:hover {
     font-size: 375%;
 }
 
-#about-desc {
+#desc {
     position: relative;
     margin: 5% 5% 0 20%;
     position: absolute;
